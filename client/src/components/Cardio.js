@@ -63,11 +63,11 @@ export default function Cardio() {
     const handleCardioSubmit = async (event) => {
         event.preventDefault();
 
-        // Get token
+        // Get token from the user
         const token = loggedIn ? Auth.getToken() : null;
         if (!token) return false;
 
-        // Get user id
+        // Get user id from the user
         const userId = Auth.getUserId();
 
         // Cardio submit
